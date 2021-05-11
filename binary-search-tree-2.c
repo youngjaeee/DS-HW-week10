@@ -347,7 +347,6 @@ int deleteNode(Node* head, int key) // 입력한 key값과 동일한 값을 가�
 		else if (preptr->key < ptr->key) // ptr의 key값이 preptr의 key값보다 큰 경우
 		{
 			preptr->right = minrightptr; // ptr은 preptr의 우측 자식노드이므로 preptr->right = minrightptr
-			printf("preptr->right 자식노드: %d %d\n", preptr->right->left->key, preptr->right->right->key);
 			freeNode(ptr); // ptr에 대한 할당 해제 함수 호출
 		}
 
